@@ -40,7 +40,11 @@ export function stringifyRoutes(
     const mode = resolveImportMode(path, options)
     if (mode === 'sync') {
       const importName = pathToName(path)
-      const importStr = `import ${importName} from '${path}'`
+
+      // zen - ini diubah
+      // const importStr = `import ${importName} from '${path}'`
+      
+      const importStr = `const ${importName} = lazy(() => import('${path}'))`
 
       // Only add import to array if it hasn't beed added before.
       if (!imports.includes(importStr))

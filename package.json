@@ -1,11 +1,11 @@
 {
-  "name": "vite-plugin-pages",
-  "version": "0.18.0",
+  "name": "vite-plugin-pages-react",
+  "version": "0.0.1",
   "description": "File system base vue-router plugin for Vite",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hannoeru/vite-plugin-pages"
+    "url": "https://github.com/mzaini30/vite-plugin-pages-react"
   },
   "exports": {
     ".": {
@@ -22,8 +22,8 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/hannoeru/vite-plugin-pages",
-  "bugs": "https://github.com/hannoeru/vite-plugin-pages/issues",
+  "homepage": "https://github.com/mzaini30/vite-plugin-pages-react",
+  "bugs": "https://github.com/mzaini30/vite-plugin-pages-react/issues",
   "scripts": {
     "dev": "npm run build -- --watch --ignore-watch examples",
     "build": "tsup src/index.ts --dts --format cjs,esm --no-splitting --target node13.2",
